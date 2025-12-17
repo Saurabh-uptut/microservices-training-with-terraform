@@ -73,4 +73,4 @@
   * [Lab 3 - Practice PromQL queries](monitoring-with-prometheus-and-grafana/lab-3-practice-promql-queries.md)
   * [Lab 4: Build Dashboards in Grafana](monitoring-with-prometheus-and-grafana/lab-4-build-dashboards-in-grafana.md)
   * [Lab 5 : Monitor Docker Containers with Prometheus, cAdvisor & Grafana](monitoring-with-prometheus-and-grafana/lab-5-monitor-docker-containers-with-prometheus-cadvisor-and-grafana.md)
-  * [Lab 6 : Monitoring Kubernetes Cluster](monitoring-with-prometheus-and-grafana/lab-6-monitoring-kubernetes-cluster.md)
+  * [Lab 6: Monitor a Kubernetes Cluster and Apps with Prometheus and Grafana (GKE)](monitoring-with-prometheus-and-grafana/lab-6-monitor-a-kubernetes-cluster-and-apps-with-prometheus-and-grafana-gke.md)
