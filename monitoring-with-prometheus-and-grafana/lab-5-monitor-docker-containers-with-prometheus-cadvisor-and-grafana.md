@@ -1,12 +1,5 @@
 # Lab 5 : Monitor Docker Containers with Prometheus, cAdvisor & Grafana
 
-Below is a rewritten, structured, instructor-ready version of **Lab 5 — Monitor Docker Containers with Prometheus, cAdvisor and Grafana**, with clear instructions, consistent formatting, and no emojis or em-dashes.\
-Use this version directly in your training program.
-
-***
-
-## Lab 5: Monitor Docker Containers with Prometheus, cAdvisor and Grafana
-
 In this lab, you will monitor Docker containers running on a Linux VM. You will install Docker (if required), deploy a multi-tier application in containers, run cAdvisor to expose container-level metrics, configure Prometheus to scrape those metrics, and build Grafana dashboards to visualize container performance.
 
 ***
