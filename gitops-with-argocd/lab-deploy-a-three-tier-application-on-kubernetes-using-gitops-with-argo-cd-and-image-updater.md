@@ -47,7 +47,7 @@ You must have:
 ### Step 1: Create Argo CD namespace
 
 ```bash
-kubectl create namespace argocd
+    kubectl create namespace argocd
 ```
 
 ### Step 2: Install Argo CD
@@ -266,7 +266,9 @@ http://<FRONTEND_EXTERNAL_IP>
 ### Step 9: Install Image Updater
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/argoproj-labs/argocd-image-updater/stable/manifests/install.yaml
+helm repo add argo https://argoproj.github.io/argo-helm
+helm repo update
+helm install argocd-image-updater argo/argocd-image-updater -n argocd
 ```
 
 Verify:

@@ -11,8 +11,6 @@ The pipeline will:
 * Authenticate to Google Cloud
 * Deploy the application to GKE using Kubernetes manifests
 
-***
-
 ### Application Architecture
 
 Frontend (NGINX static UI)\
@@ -25,8 +23,6 @@ Frontend (NGINX static UI)\
 * Backend API: LoadBalancer
 * Frontend UI: LoadBalancer
 
-***
-
 ### What You Will Build
 
 You will:
@@ -37,8 +33,6 @@ You will:
 * Deploy Kubernetes manifests to GKE
 * Validate the application end to end
 
-***
-
 ### Prerequisites
 
 You must have:
@@ -48,8 +42,6 @@ You must have:
 * Docker Hub account
 * GitHub repository with the application code
 * gcloud CLI installed locally (to create credentials)
-
-***
 
 ## Part 1: Prepare GCP Service Account for GitHub Actions
 
@@ -96,8 +88,6 @@ In your GitHub repository, add the following secrets:
 | DOCKERHUB\_USERNAME  | docker hub username     |
 | DOCKERHUB\_TOKEN     | docker hub access token |
 
-***
-
 ## Part 3: Prepare Kubernetes Manifests
 
 Your repository structure should look like:
@@ -127,8 +117,6 @@ Ensure image references in manifests use placeholders like:
 image: YOUR_DOCKERHUB/backend-user-management:latest
 image: YOUR_DOCKERHUB/frontend-user-management:latest
 ```
-
-***
 
 ## Part 4: Create GitHub Actions Workflow
 
@@ -203,8 +191,6 @@ jobs:
           kubectl apply -f k8s_solution/ui-svc-lb.yml
 ```
 
-***
-
 ## Part 5: Trigger the Pipeline
 
 Commit and push:
@@ -227,8 +213,6 @@ Watch:
 * Image push
 * Deployment to GKE
 
-***
-
 ## Part 6: Verify Deployment
 
 ```bash
@@ -247,8 +231,6 @@ Test API:
 ```bash
 curl http://<BACKEND_LB_IP>/health
 ```
-
-***
 
 ## Cleanup
 

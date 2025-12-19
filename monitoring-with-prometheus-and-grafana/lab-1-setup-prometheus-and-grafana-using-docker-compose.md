@@ -40,7 +40,7 @@ newgrp docker
 2. Clone the repository provided for this lab:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/saurabhd2106/setup-prometheus-grafana-ih.git
 cd <repository-folder>
 ```
 
